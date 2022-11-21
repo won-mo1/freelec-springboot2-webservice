@@ -1,12 +1,12 @@
 buildscript{
-    ext{
+    ext{    //전역변수선언
         springBootVersion = '2.1.7.RELEASE'
     }
-    repositories{
+    repositories{   //저장소 mavenCentral, jcenter 에서 받아오겠다
         mavenCentral()
         jcenter()
     }
-    dependencies {
+    dependencies {  //스프링부트 그레이들 플러그인의 2.1.7.릴리즈를 의존성으로 받겠다
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
